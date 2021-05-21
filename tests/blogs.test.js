@@ -76,7 +76,6 @@ describe("when not logged in", async () => {
       }).then((res) => res.json());
     });
 
-    console.log(result);
     expect(result.error).toEqual("You must log in!");
   });
 
@@ -89,7 +88,6 @@ describe("when not logged in", async () => {
       }).then((res) => res.json());
     });
 
-    console.log(result);
     expect(result.error).toEqual("You must log in!");
   });
 });
