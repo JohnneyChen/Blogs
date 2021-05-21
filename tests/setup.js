@@ -9,3 +9,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI, {
   useMongoClient: true,
 });
+
+afterAll(() => {
+  mongoose.disconnect();
+});
